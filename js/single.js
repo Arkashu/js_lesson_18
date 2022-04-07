@@ -4,6 +4,7 @@ const STORE_ID = 'todoList';
 const TODO_CONTAINER = document.getElementById('todoItems');
 
 
+
 //Helper func
 
 function findId(el){
@@ -78,7 +79,7 @@ TODO_CONTAINER.addEventListener('click', (e) => {
 //*********************Clear All*************************
 form.addEventListener('click', function (e){
     if (!e.target.classList.contains('btn-danger')) return;
-    TODO_CONTAINER.remove();
+    TODO_CONTAINER.innerHTML = '';
     const a = [];
     localStorage.setItem(STORE_ID, JSON.stringify([]));
 
