@@ -4,6 +4,7 @@
     box-shadow: 0 0 14px 1px rgba(0, 0, 0, .2);
     padding: 20px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .taskHeading {
@@ -21,4 +22,9 @@ label {
     cursor: pointer;
     margin-bottom: 15px;
     display: block;
+}
+.btn-close{
+    position: absolute;
+    left: 240px;
+    bottom: 130px;
 }
